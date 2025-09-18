@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { useTranslation } from 'react-i18next';
 import beefStew from '@/assets/beef-stew.jpg';
 import goatCheeseSalad from '@/assets/goat-cheese-salad.jpg';
 import chickenGratin from '@/assets/chicken-gratin.jpg';
@@ -8,6 +9,7 @@ import restaurantBar from '@/assets/restaurant-bar.jpg';
 import restaurantExterior from '@/assets/restaurant-exterior.jpg';
 
 const Gallery = () => {
+  const { t } = useTranslation();
   const cuisineImages = [
     { src: beefStew, alt: 'Traditional French beef stew with vegetables' },
     { src: goatCheeseSalad, alt: 'Fresh goat cheese salad with mixed greens' },
@@ -28,7 +30,7 @@ const Gallery = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
-              Gallery
+              {t('gallery.title')}
             </h1>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
             <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
@@ -40,7 +42,7 @@ const Gallery = () => {
           {/* Our Cuisine Section */}
           <section className="mb-16">
             <h2 className="font-playfair text-3xl font-bold text-primary mb-8 text-center">
-              Our Cuisine
+              {t('gallery.cuisine')}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {cuisineImages.map((image, index) => (
@@ -65,7 +67,7 @@ const Gallery = () => {
           {/* Our Ambiance Section */}
           <section>
             <h2 className="font-playfair text-3xl font-bold text-primary mb-8 text-center">
-              Our Ambiance
+              {t('gallery.ambiance')}
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {ambianceImages.map((image, index) => (

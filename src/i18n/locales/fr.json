@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "menu": "Menu",
+    "gallery": "Galerie", 
+    "contact": "Contact",
+    "reserve": "Réserver une Table"
+  },
+  "hero": {
+    "title": "Saveurs Françaises Authentiques au Cœur de Genève",
+    "subtitle": "Découvrez la chaleur de la cuisine française traditionnelle dans notre restaurant cosy situé dans le charmant quartier des Grottes.",
+    "viewMenu": "Voir Notre Menu",
+    "makeReservation": "Faire une Réservation"
+  },
+  "features": {
+    "dailySpecials": "Plats du Jour",
+    "dailySpecialsDesc": "Plats saisonniers frais préparés avec des ingrédients locaux, changeant quotidiennement pour vous offrir le meilleur de la cuisine française.",
+    "cozySetting": "Cadre Chaleureux",
+    "cozySettingDesc": "Ambiance intimiste parfaite pour les dîners romantiques, repas de famille ou retrouvailles entre amis.",
+    "freshIngredients": "Ingrédients Frais",
+    "freshIngredientsDesc": "Nous sélectionnons les meilleurs ingrédients locaux et de saison pour créer des plats français authentiques aux saveurs exceptionnelles."
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "paragraph1": "Niché dans le charmant quartier des Grottes à Genève, Le Nant des Grottes sert une cuisine française authentique avec passion et dévouement depuis notre ouverture. Notre histoire commence par une vision simple : créer un espace chaleureux et accueillant où la communauté peut se rassembler autour d'une cuisine exceptionnelle et d'une hospitalité authentique.",
+    "paragraph2": "Nous croyons au pouvoir des ingrédients frais et de saison, sourcés auprès de producteurs locaux autant que possible. Notre équipe de cuisine combine les techniques culinaires françaises traditionnelles avec une créativité moderne, s'assurant que chaque plat raconte une histoire de saveur, de savoir-faire et de soin.",
+    "paragraph3": "De notre sélection de vins soigneusement choisie à nos plats du jour qui célèbrent les saisons, chaque élément du Nant des Grottes reflète notre engagement envers la qualité et notre amour de rassembler les gens autour d'une cuisine exceptionnelle.",
+    "philosophy": "Notre Philosophie",
+    "philosophyDesc": "Ingrédients frais, techniques traditionnelles et créativité moderne s'unissent pour créer des expériences culinaires mémorables au cœur de Genève.",
+    "community": "Focus Communautaire", 
+    "communityDesc": "Nous sommes fiers de faire partie du quartier des Grottes, créant un espace où locaux et visiteurs peuvent profiter d'une cuisine française authentique."
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "dailySpecials": "Plats du Jour",
+    "appetizers": "Entrées",
+    "mains": "Plats Principaux",
+    "desserts": "Desserts", 
+    "wines": "Vins et Boissons",
+    "dishes": {
+      "chickenGratin": "Cuisse de Poulet & Gratin Dauphinois",
+      "chickenGratinDesc": "Cuisse de poulet tendre avec gratin dauphinois crémeux, aubergines confites et sauce aux champignons",
+      "seaBream": "Daurade Grillée & Pommes Grenailles",
+      "seaBreamDesc": "Daurade fraîche grillée à la perfection avec pommes grenailles, légumes de saison et sauce chimichurri",
+      "beefSteak": "Steak de Bœuf & Frites",
+      "beefSteakDesc": "Steak de bœuf premium avec frites croustillantes, légumes de saison et sauce tartare maison",
+      "goatCheeseSalad": "Salade au Chèvre",
+      "goatCheeseSaladDesc": "Mesclun frais avec fromage de chèvre crémeux, noix et vinaigrette au miel",
+      "beefStew": "Daube de Bœuf Traditionnelle", 
+      "beefStewDesc": "Bœuf mijoté lentement dans une riche sauce au vin avec légumes racines et herbes fraîches"
+    }
+  },
+  "gallery": {
+    "title": "Galerie",
+    "cuisine": "Notre Cuisine",
+    "ambiance": "Notre Ambiance"
+  },
+  "contact": {
+    "title": "Venez Nous Voir ou Contactez-Nous",
+    "reservationForm": "Faire une Réservation",
+    "name": "Nom",
+    "email": "Email", 
+    "phone": "Téléphone",
+    "guests": "Nombre de Convives",
+    "date": "Date",
+    "time": "Heure",
+    "message": "Demandes Spéciales",
+    "submit": "Envoyer la Réservation",
+    "address": "Adresse",
+    "telephone": "Téléphone", 
+    "followUs": "Suivez-Nous"
+  },
+  "footer": {
+    "quickLinks": "Liens Rapides",
+    "contact": "Coordonnées",
+    "followUs": "Suivez-Nous", 
+    "address": "Rue des Grottes 7, 1201 Genève",
+    "rights": "Tous droits réservés."
+  }
+}

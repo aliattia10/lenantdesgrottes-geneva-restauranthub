@@ -1,19 +1,31 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t, i18n } = useTranslation();
 
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/menu', label: 'Menu' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: t('nav.home') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/menu', label: t('nav.menu') },
+    { href: '/gallery', label: t('nav.gallery') },
+    { href: '/contact', label: t('nav.contact') },
   ];
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   const isActive = (href: string) => location.pathname === href;
 
@@ -45,9 +57,26 @@ const Navigation = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center space-x-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="sm">
+                  <Globe className="h-4 w-4 mr-2" />
+                  {i18n.language.toUpperCase()}
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => changeLanguage('en')}>
+                  English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('fr')}>
+                  Français
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <Button asChild variant="default">
-              <Link to="/contact">Reserve Table</Link>
+              <Link to="/contact">{t('nav.reserve')}</Link>
             </Button>
           </div>
 
@@ -82,10 +111,27 @@ const Navigation = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="px-3 pt-2">
+              <div className="px-3 pt-2 space-y-2">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="sm" className="w-full justify-center">
+                      <Globe className="h-4 w-4 mr-2" />
+                      {i18n.language.toUpperCase()}
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="center">
+                    <DropdownMenuItem onClick={() => changeLanguage('en')}>
+                      English
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => changeLanguage('fr')}>
+                      Français
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+                
                 <Button asChild variant="default" className="w-full">
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
-                    Reserve Table
+                    {t('nav.reserve')}
                   </Link>
                 </Button>
               </div>

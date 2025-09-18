@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -29,49 +31,49 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-playfair text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-playfair text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
             <nav className="space-y-2">
               <Link 
                 to="/" 
                 className="font-inter text-primary-foreground/80 hover:text-accent transition-colors block"
               >
-                Home
+                {t('nav.home')}
               </Link>
               <Link 
                 to="/about" 
                 className="font-inter text-primary-foreground/80 hover:text-accent transition-colors block"
               >
-                About Us
+                {t('nav.about')}
               </Link>
               <Link 
                 to="/menu" 
                 className="font-inter text-primary-foreground/80 hover:text-accent transition-colors block"
               >
-                Menu
+                {t('nav.menu')}
               </Link>
               <Link 
                 to="/gallery" 
                 className="font-inter text-primary-foreground/80 hover:text-accent transition-colors block"
               >
-                Gallery
+                {t('nav.gallery')}
               </Link>
               <Link 
                 to="/contact" 
                 className="font-inter text-primary-foreground/80 hover:text-accent transition-colors block"
               >
-                Contact & Reservations
+                {t('nav.contact')}
               </Link>
             </nav>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-playfair text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="font-playfair text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-accent flex-shrink-0" />
                 <span className="font-inter text-sm text-primary-foreground/80">
-                  Rue des Grottes 7, 1201 Geneva
+                  {t('footer.address')}
                 </span>
               </div>
               <div className="flex items-center space-x-3">
@@ -107,7 +109,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="font-inter text-sm text-primary-foreground/70">
-            © 2024 Le Nant des Grottes. All rights reserved.
+            © 2024 Le Nant des Grottes. {t('footer.rights')}
           </p>
         </div>
       </div>

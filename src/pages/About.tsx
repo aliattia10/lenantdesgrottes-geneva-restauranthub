@@ -1,7 +1,9 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -10,7 +12,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
-              Our Story
+              {t('about.title')}
             </h1>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
           </div>
@@ -18,44 +20,34 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="font-inter text-lg text-foreground/80 leading-relaxed">
-                Nestled in Geneva's charming Grottes district, Le Nant des Grottes has been serving 
-                authentic French cuisine with passion and dedication since our opening. Our story 
-                begins with a simple vision: to create a warm, welcoming space where the community 
-                can gather over exceptional food and genuine hospitality.
+                {t('about.paragraph1')}
               </p>
               
               <p className="font-inter text-lg text-foreground/80 leading-relaxed">
-                We believe in the power of fresh, seasonal ingredients sourced from local producers 
-                whenever possible. Our kitchen team combines traditional French culinary techniques 
-                with modern creativity, ensuring every dish tells a story of flavor, craftsmanship, 
-                and care.
+                {t('about.paragraph2')}
               </p>
 
               <p className="font-inter text-lg text-foreground/80 leading-relaxed">
-                From our carefully curated wine selection to our daily specials that celebrate 
-                the seasons, every element of Le Nant des Grottes reflects our commitment to 
-                quality and our love for bringing people together through exceptional food.
+                {t('about.paragraph3')}
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="bg-card rounded-lg p-6 shadow-elegant">
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-3">
-                  Our Philosophy
+                  {t('about.philosophy')}
                 </h3>
                 <p className="font-inter text-foreground/80">
-                  Fresh ingredients, traditional techniques, and modern creativity come together 
-                  to create memorable dining experiences in the heart of Geneva.
+                  {t('about.philosophyDesc')}
                 </p>
               </div>
 
               <div className="bg-card rounded-lg p-6 shadow-elegant">
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-3">
-                  Community Focus
+                  {t('about.community')}
                 </h3>
                 <p className="font-inter text-foreground/80">
-                  We're proud to be part of the Grottes neighborhood, creating a space where 
-                  locals and visitors alike can enjoy authentic French cuisine.
+                  {t('about.communityDesc')}
                 </p>
               </div>
             </div>

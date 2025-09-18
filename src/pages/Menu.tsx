@@ -1,8 +1,10 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
 
 const Menu = () => {
+  const { t } = useTranslation();
   const dailySpecials = [
     {
       name: "Cuisse de poulet & gratin dauphinois",
@@ -50,7 +52,7 @@ const Menu = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
-              Our Menu
+              {t('menu.title')}
             </h1>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
             <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
@@ -64,7 +66,7 @@ const Menu = () => {
             <Card className="bg-gradient-hero text-primary-foreground mb-8">
               <CardHeader>
                 <CardTitle className="font-playfair text-3xl text-center">
-                  Plats du Jour
+                  {t('menu.dailySpecials')}
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -85,7 +87,7 @@ const Menu = () => {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Appetizers */}
             <section>
-              <h2 className="font-playfair text-2xl font-bold text-primary mb-6">Entrées</h2>
+              <h2 className="font-playfair text-2xl font-bold text-primary mb-6">{t('menu.appetizers')}</h2>
               <div className="space-y-4">
                 {appetizers.map((dish, index) => (
                   <Card key={index} className="hover:shadow-elegant transition-shadow">
@@ -105,7 +107,7 @@ const Menu = () => {
 
             {/* Main Courses */}
             <section>
-              <h2 className="font-playfair text-2xl font-bold text-primary mb-6">Plats Principaux</h2>
+              <h2 className="font-playfair text-2xl font-bold text-primary mb-6">{t('menu.mains')}</h2>
               <div className="space-y-4">
                 {mainCourses.map((dish, index) => (
                   <Card key={index} className="hover:shadow-elegant transition-shadow">
@@ -126,7 +128,7 @@ const Menu = () => {
 
           {/* Desserts */}
           <section className="mt-12">
-            <h2 className="font-playfair text-2xl font-bold text-primary mb-6 text-center">Desserts</h2>
+            <h2 className="font-playfair text-2xl font-bold text-primary mb-6 text-center">{t('menu.desserts')}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {desserts.map((dish, index) => (
                 <Card key={index} className="hover:shadow-elegant transition-shadow">

@@ -4,9 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Phone, ChefHat, Utensils, Wine } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import heroImage from '@/assets/hero-restaurant.jpg';
 
 const Index = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -24,19 +26,18 @@ const Index = () => {
             Welcome to Le Nant des Grottes
           </h1>
           <p className="font-inter text-xl md:text-2xl font-light mb-8 opacity-90">
-            Authentic French Flavors in the Heart of Geneva
+            {t('hero.title')}
           </p>
           <p className="font-inter text-lg mb-8 opacity-80 max-w-2xl mx-auto">
-            Experience cozy atmosphere and delicious, freshly prepared meals using 
-            the finest seasonal ingredients in Geneva's charming Grottes district.
+            {t('hero.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="default" className="font-inter">
-              <Link to="/menu">View Our Menu</Link>
+              <Link to="/menu">{t('hero.viewMenu')}</Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="font-inter">
-              <Link to="/contact">Make a Reservation</Link>
+              <Link to="/contact">{t('hero.makeReservation')}</Link>
             </Button>
           </div>
         </div>
@@ -57,11 +58,10 @@ const Index = () => {
               <CardContent className="p-8">
                 <ChefHat className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-3">
-                  Authentic French Cuisine
+                  {t('features.freshIngredients')}
                 </h3>
                 <p className="font-inter text-foreground/80">
-                  Traditional recipes and modern creativity using fresh, 
-                  seasonal ingredients sourced from local producers.
+                  {t('features.freshIngredientsDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -70,11 +70,10 @@ const Index = () => {
               <CardContent className="p-8">
                 <Utensils className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-3">
-                  Cozy Atmosphere
+                  {t('features.cozySetting')}
                 </h3>
                 <p className="font-inter text-foreground/80">
-                  Warm, welcoming space perfect for intimate dinners, 
-                  family meals, and gatherings with friends.
+                  {t('features.cozySettingDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -100,11 +99,11 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
-              Today's Specialties
+              {t('features.dailySpecials')}
             </h2>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-6"></div>
             <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
-              Our chef crafts daily specials featuring the freshest seasonal ingredients.
+              {t('features.dailySpecialsDesc')}
             </p>
           </div>
 
@@ -148,7 +147,7 @@ const Index = () => {
 
           <div className="text-center">
             <Button asChild variant="outline" size="lg" className="font-inter">
-              <Link to="/menu">View Full Menu</Link>
+              <Link to="/menu">{t('hero.viewMenu')}</Link>
             </Button>
           </div>
         </div>
@@ -211,7 +210,7 @@ const Index = () => {
                 in a warm, welcoming atmosphere.
               </p>
               <Button asChild className="w-full font-inter">
-                <Link to="/contact">Make a Reservation</Link>
+                <Link to="/contact">{t('hero.makeReservation')}</Link>
               </Button>
             </div>
           </div>

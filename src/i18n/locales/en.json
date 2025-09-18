@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu", 
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "reserve": "Reserve Table"
+  },
+  "hero": {
+    "title": "Authentic French Flavors in the Heart of Geneva",
+    "subtitle": "Experience the warmth of traditional French cuisine in our cozy restaurant located in the charming Grottes district.",
+    "viewMenu": "View Our Menu",
+    "makeReservation": "Make a Reservation"
+  },
+  "features": {
+    "dailySpecials": "Daily Specials",
+    "dailySpecialsDesc": "Fresh seasonal dishes prepared with local ingredients, changing daily to bring you the best of French cuisine.",
+    "cozySetting": "Cozy Setting", 
+    "cozySettingDesc": "Intimate dining atmosphere perfect for romantic dinners, family meals, or gathering with friends.",
+    "freshIngredients": "Fresh Ingredients",
+    "freshIngredientsDesc": "We source the finest local and seasonal ingredients to create authentic French dishes with exceptional flavor."
+  },
+  "about": {
+    "title": "Our Story",
+    "paragraph1": "Nestled in Geneva's charming Grottes district, Le Nant des Grottes has been serving authentic French cuisine with passion and dedication since our opening. Our story begins with a simple vision: to create a warm, welcoming space where the community can gather over exceptional food and genuine hospitality.",
+    "paragraph2": "We believe in the power of fresh, seasonal ingredients sourced from local producers whenever possible. Our kitchen team combines traditional French culinary techniques with modern creativity, ensuring every dish tells a story of flavor, craftsmanship, and care.",
+    "paragraph3": "From our carefully curated wine selection to our daily specials that celebrate the seasons, every element of Le Nant des Grottes reflects our commitment to quality and our love for bringing people together through exceptional food.",
+    "philosophy": "Our Philosophy",
+    "philosophyDesc": "Fresh ingredients, traditional techniques, and modern creativity come together to create memorable dining experiences in the heart of Geneva.",
+    "community": "Community Focus",
+    "communityDesc": "We're proud to be part of the Grottes neighborhood, creating a space where locals and visitors alike can enjoy authentic French cuisine."
+  },
+  "menu": {
+    "title": "Our Menu",
+    "dailySpecials": "Daily Specials",
+    "appetizers": "Appetizers",
+    "mains": "Main Courses", 
+    "desserts": "Desserts",
+    "wines": "Wines & Beverages",
+    "dishes": {
+      "chickenGratin": "Chicken Leg & Dauphinoise Gratin",
+      "chickenGratinDesc": "Tender chicken leg with creamy dauphinoise potatoes, confit aubergines, and mushroom sauce",
+      "seaBream": "Grilled Sea Bream & Baby Potatoes",
+      "seaBreamDesc": "Fresh sea bream grilled to perfection with baby potatoes, seasonal vegetables, and chimichurri sauce",
+      "beefSteak": "Beef Steak & Fries", 
+      "beefSteakDesc": "Premium beef steak with crispy fries, seasonal vegetables, and homemade tartare sauce",
+      "goatCheeseSalad": "Goat Cheese Salad",
+      "goatCheeseSaladDesc": "Fresh mixed greens with creamy goat cheese, walnuts, and honey vinaigrette",
+      "beefStew": "Traditional Beef Stew",
+      "beefStewDesc": "Slow-cooked beef in rich wine sauce with root vegetables and fresh herbs"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "cuisine": "Our Cuisine",
+    "ambiance": "Our Ambiance"
+  },
+  "contact": {
+    "title": "Visit Us or Get in Touch",
+    "reservationForm": "Make a Reservation",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "guests": "Number of Guests", 
+    "date": "Date",
+    "time": "Time",
+    "message": "Special Requests",
+    "submit": "Submit Reservation",
+    "address": "Address",
+    "telephone": "Telephone",
+    "followUs": "Follow Us"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contact": "Contact Info",
+    "followUs": "Follow Us",
+    "address": "Rue des Grottes 7, 1201 Geneva",
+    "rights": "All rights reserved."
+  }
+}

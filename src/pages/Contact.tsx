@@ -5,8 +5,10 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock, Instagram } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
@@ -21,7 +23,7 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="font-playfair text-4xl md:text-5xl font-bold text-primary mb-6">
-              Visit Us or Get in Touch
+              {t('contact.title')}
             </h1>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
             <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
@@ -36,14 +38,14 @@ const Contact = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-playfair text-2xl text-primary">
-                    Contact Information
+                    {t('contact.address')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-inter font-semibold text-primary">Address</p>
+                      <p className="font-inter font-semibold text-primary">{t('contact.address')}</p>
                       <p className="font-inter text-foreground/80">
                         Rue des Grottes 7<br />
                         1201 Geneva, Switzerland
@@ -54,7 +56,7 @@ const Contact = () => {
                   <div className="flex items-start space-x-4">
                     <Phone className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                     <div>
-                      <p className="font-inter font-semibold text-primary">Telephone</p>
+                      <p className="font-inter font-semibold text-primary">{t('contact.telephone')}</p>
                       <a 
                         href="tel:+41227400720" 
                         className="font-inter text-foreground/80 hover:text-primary transition-colors"
@@ -127,7 +129,7 @@ const Contact = () => {
               <Card className="shadow-elegant">
                 <CardHeader>
                   <CardTitle className="font-playfair text-2xl text-primary">
-                    Make a Reservation
+                    {t('contact.reservationForm')}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -135,18 +137,18 @@ const Contact = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label className="font-inter text-sm font-medium text-primary block mb-2">
-                          Full Name *
+                          {t('contact.name')} *
                         </label>
                         <Input 
                           type="text" 
                           required 
-                          placeholder="Your name"
+                          placeholder={t('contact.name')}
                           className="font-inter"
                         />
                       </div>
                       <div>
                         <label className="font-inter text-sm font-medium text-primary block mb-2">
-                          Phone Number *
+                          {t('contact.phone')} *
                         </label>
                         <Input 
                           type="tel" 
@@ -206,7 +208,7 @@ const Contact = () => {
                     </div>
 
                     <Button type="submit" className="w-full font-inter">
-                      Request Reservation
+                      {t('contact.submit')}
                     </Button>
                   </form>
 
