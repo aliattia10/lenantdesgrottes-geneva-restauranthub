@@ -8,35 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Restaurant Brand Colors - Le Nant des Grottes */
+    --background: 42 15% 96%;
+    --foreground: 158 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 25% 98%;
+    --card-foreground: 158 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 25% 98%;
+    --popover-foreground: 158 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Deep elegant green as primary */
+    --primary: 158 35% 25%;
+    --primary-foreground: 42 25% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Cream/warm neutral as secondary */
+    --secondary: 42 20% 92%;
+    --secondary-foreground: 158 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 15% 88%;
+    --muted-foreground: 158 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Light turquoise accent */
+    --accent: 185 40% 70%;
+    --accent-foreground: 158 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 42 25% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 15% 85%;
+    --input: 42 15% 90%;
+    --ring: 158 35% 25%;
 
     --radius: 0.5rem;
+
+    /* Restaurant Design Tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(158 35% 35%));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--accent)), hsl(185 45% 75%));
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
