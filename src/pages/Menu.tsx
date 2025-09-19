@@ -2,6 +2,8 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from 'react-i18next';
+import realKitchenDishes from '@/assets/real-kitchen-dishes.jpg';
+import realSaladGoatcheese from '@/assets/real-salad-goatcheese.jpg';
 
 const Menu = () => {
   const { t } = useTranslation();
@@ -60,6 +62,26 @@ const Menu = () => {
               featuring fresh, seasonal ingredients and time-honored techniques.
             </p>
           </div>
+
+          {/* Food Gallery Preview */}
+          <section className="mb-16">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <img 
+                  src={realKitchenDishes} 
+                  alt="Plated dishes from Le Nant des Grottes kitchen" 
+                  className="w-full h-64 object-cover rounded-lg shadow-elegant"
+                />
+              </div>
+              <div>
+                <img 
+                  src={realSaladGoatcheese} 
+                  alt="Fresh goat cheese salad with restaurant ambiance" 
+                  className="w-full h-64 object-cover rounded-lg shadow-elegant"
+                />
+              </div>
+            </div>
+          </section>
 
           {/* Daily Specials */}
           <section className="mb-16">

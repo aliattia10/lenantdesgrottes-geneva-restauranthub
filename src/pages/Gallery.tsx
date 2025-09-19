@@ -1,25 +1,29 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useTranslation } from 'react-i18next';
-import beefStew from '@/assets/beef-stew.jpg';
-import goatCheeseSalad from '@/assets/goat-cheese-salad.jpg';
-import chickenGratin from '@/assets/chicken-gratin.jpg';
-import restaurantInteriorDay from '@/assets/restaurant-interior-day.jpg';
-import restaurantBar from '@/assets/restaurant-bar.jpg';
-import restaurantExterior from '@/assets/restaurant-exterior.jpg';
+import realSaladGoatcheese from '@/assets/real-salad-goatcheese.jpg';
+import realSaladInterior from '@/assets/real-salad-interior.jpg';
+import realKitchenDishes from '@/assets/real-kitchen-dishes.jpg';
+import realBarDay from '@/assets/real-bar-day.jpg';
+import realBarNight from '@/assets/real-bar-night.jpg';
+import realRestaurantNight from '@/assets/real-restaurant-night.jpg';
+import realWineStorage from '@/assets/real-wine-storage.jpg';
+import realExterior from '@/assets/real-exterior.jpg';
 
 const Gallery = () => {
   const { t } = useTranslation();
   const cuisineImages = [
-    { src: beefStew, alt: 'Traditional French beef stew with vegetables' },
-    { src: goatCheeseSalad, alt: 'Fresh goat cheese salad with mixed greens' },
-    { src: chickenGratin, alt: 'Chicken with gratin dauphinois and seasonal vegetables' },
+    { src: realSaladGoatcheese, alt: 'Fresh goat cheese salad with mixed greens and restaurant ambiance' },
+    { src: realSaladInterior, alt: 'Colorful salad with restaurant interior in background' },
+    { src: realKitchenDishes, alt: 'Beautifully plated dishes including beef stew with vegetables' },
   ];
 
   const ambianceImages = [
-    { src: restaurantInteriorDay, alt: 'Restaurant interior during day with natural lighting' },
-    { src: restaurantBar, alt: 'Cozy bar area with wine selection' },
-    { src: restaurantExterior, alt: 'Charming restaurant exterior with outdoor seating' },
+    { src: realBarDay, alt: 'Bar area during daytime with hanging wine glasses' },
+    { src: realBarNight, alt: 'Cozy evening bar atmosphere with warm lighting' },
+    { src: realRestaurantNight, alt: 'Restaurant dining area at night with intimate lighting' },
+    { src: realWineStorage, alt: 'Wine storage area with atmospheric lighting' },
+    { src: realExterior, alt: 'Restaurant exterior with signature turquoise door frames' },
   ];
 
   return (
@@ -69,7 +73,7 @@ const Gallery = () => {
             <h2 className="font-playfair text-3xl font-bold text-primary mb-8 text-center">
               {t('gallery.ambiance')}
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
               {ambianceImages.map((image, index) => (
                 <div key={index} className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-lg shadow-elegant hover:shadow-xl transition-all duration-300 group-hover:scale-105">

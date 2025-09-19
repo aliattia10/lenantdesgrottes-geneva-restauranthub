@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useTranslation } from 'react-i18next';
+import realRestaurantNight from '@/assets/real-restaurant-night.jpg';
 
 const About = () => {
   const { t } = useTranslation();
@@ -51,6 +52,17 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Restaurant Image */}
+        <div className="mt-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-6xl mx-auto">
+            <img 
+              src={realRestaurantNight} 
+              alt="Le Nant des Grottes restaurant interior at night" 
+              className="w-full h-64 md:h-96 object-cover rounded-lg shadow-elegant"
+            />
           </div>
         </div>
       </main>

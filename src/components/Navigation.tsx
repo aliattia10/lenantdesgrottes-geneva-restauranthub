@@ -21,6 +21,7 @@ const Navigation = () => {
     { href: '/menu', label: t('nav.menu') },
     { href: '/gallery', label: t('nav.gallery') },
     { href: '/contact', label: t('nav.contact') },
+    { href: '/dashboard', label: 'Dashboard' },
   ];
 
   const changeLanguage = (lng: string) => {

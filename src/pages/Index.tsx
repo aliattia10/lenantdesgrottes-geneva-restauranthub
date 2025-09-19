@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, Phone, ChefHat, Utensils, Wine } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import heroImage from '@/assets/hero-restaurant.jpg';
+import realExterior from '@/assets/real-exterior.jpg';
 
 const Index = () => {
   const { t } = useTranslation();
@@ -17,7 +17,7 @@ const Index = () => {
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${realExterior})` }}
         />
         <div className="absolute inset-0 bg-black/40" />
         
