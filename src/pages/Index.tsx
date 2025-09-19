@@ -203,11 +203,10 @@ const Index = () => {
 
             <div className="bg-card rounded-lg p-8 shadow-elegant">
               <h3 className="font-playfair text-2xl font-semibold text-primary mb-4">
-                Ready to Dine?
+                {t('reservation.readyToDine')}
               </h3>
               <p className="font-inter text-foreground/80 mb-6">
-                Reserve your table today and experience authentic French cuisine 
-                in a warm, welcoming atmosphere.
+                {t('reservation.reserveToday')}
               </p>
               <Button asChild className="w-full font-inter">
                 <Link to="/contact">{t('hero.makeReservation')}</Link>

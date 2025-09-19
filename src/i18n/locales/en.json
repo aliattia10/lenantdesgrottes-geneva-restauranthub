@@ -71,6 +71,10 @@
     "telephone": "Telephone",
     "followUs": "Follow Us"
   },
+  "reservation": {
+    "readyToDine": "Ready to Dine?",
+    "reserveToday": "Reserve your table today and experience authentic French cuisine in a warm, welcoming atmosphere."
+  },
   "footer": {
     "quickLinks": "Quick Links",
     "contact": "Contact Info",

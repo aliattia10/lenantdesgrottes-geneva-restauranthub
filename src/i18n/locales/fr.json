@@ -71,6 +71,10 @@
     "telephone": "Téléphone", 
     "followUs": "Suivez-Nous"
   },
+  "reservation": {
+    "readyToDine": "Prêt à Déguster ?",
+    "reserveToday": "Réservez votre table aujourd'hui et découvrez une cuisine française authentique dans une atmosphère chaleureuse et accueillante."
+  },
   "footer": {
     "quickLinks": "Liens Rapides",
     "contact": "Coordonnées",
