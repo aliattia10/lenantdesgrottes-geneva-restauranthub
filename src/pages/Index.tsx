@@ -23,7 +23,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
-            Welcome to Le Nant des Grottes
+            {t('hero.welcome')}
           </h1>
           <p className="font-inter text-xl md:text-2xl font-light mb-8 opacity-90">
             {t('hero.title')}
@@ -48,7 +48,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
-              Why Choose Le Nant des Grottes?
+              {t('features.whyChoose')}
             </h2>
             <div className="w-24 h-1 bg-gradient-accent mx-auto"></div>
           </div>
@@ -82,11 +82,10 @@ const Index = () => {
               <CardContent className="p-8">
                 <Wine className="h-12 w-12 text-accent mx-auto mb-4" />
                 <h3 className="font-playfair text-xl font-semibold text-primary mb-3">
-                  Curated Wine Selection
+                  {t('features.wineSelection')}
                 </h3>
                 <p className="font-inter text-foreground/80">
-                  Carefully selected wines to complement our dishes, 
-                  featuring both local Swiss and classic French varieties.
+                  {t('features.wineSelectionDesc')}
                 </p>
               </CardContent>
             </Card>
@@ -116,7 +115,7 @@ const Index = () => {
                 <p className="font-inter text-sm text-foreground/80 mb-4">
                   Gratin dauphinois, aubergines confites, sauce champignons
                 </p>
-                <p className="font-inter text-xl font-bold text-accent">CHF 28</p>
+                <p className="font-inter text-xl font-bold text-accent">CHF 26</p>
               </CardContent>
             </Card>
 
@@ -128,7 +127,7 @@ const Index = () => {
                 <p className="font-inter text-sm text-foreground/80 mb-4">
                   Pommes grenailles, légumes du jour, sauce chimichurri
                 </p>
-                <p className="font-inter text-xl font-bold text-accent">CHF 32</p>
+                <p className="font-inter text-xl font-bold text-accent">CHF 29</p>
               </CardContent>
             </Card>
 
@@ -140,7 +139,7 @@ const Index = () => {
                 <p className="font-inter text-sm text-foreground/80 mb-4">
                   Frites, légumes du jour, sauce tartare
                 </p>
-                <p className="font-inter text-xl font-bold text-accent">CHF 35</p>
+                <p className="font-inter text-xl font-bold text-accent">CHF 32</p>
               </CardContent>
             </Card>
           </div>
@@ -159,14 +158,14 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-playfair text-3xl font-bold text-primary mb-6">
-                Visit Us
+                {t('visit.title')}
               </h2>
               
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-inter font-semibold text-primary">Address</p>
+                    <p className="font-inter font-semibold text-primary">{t('visit.address')}</p>
                     <p className="font-inter text-foreground/80">
                       Rue des Grottes 7<br />
                       1201 Geneva, Switzerland
@@ -177,7 +176,7 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <Phone className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-inter font-semibold text-primary">Reservations</p>
+                    <p className="font-inter font-semibold text-primary">{t('visit.reservations')}</p>
                     <a 
                       href="tel:+41227400720"
                       className="font-inter text-foreground/80 hover:text-primary transition-colors"
@@ -190,11 +189,11 @@ const Index = () => {
                 <div className="flex items-start space-x-3">
                   <Clock className="h-5 w-5 text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <p className="font-inter font-semibold text-primary">Opening Hours</p>
+                    <p className="font-inter font-semibold text-primary">{t('visit.openingHours')}</p>
                     <div className="font-inter text-foreground/80 space-y-1">
-                      <p>Tuesday - Saturday: 11:30 - 14:30, 18:30 - 23:00</p>
-                      <p>Sunday: 11:30 - 15:00</p>
-                      <p>Monday: Closed</p>
+                      <p>{t('visit.hours.tuesdaySaturday')}</p>
+                      <p>{t('visit.hours.sunday')}</p>
+                      <p>{t('visit.hours.monday')}</p>
                     </div>
                   </div>
                 </div>

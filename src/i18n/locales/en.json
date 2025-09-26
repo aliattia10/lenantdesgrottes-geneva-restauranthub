@@ -11,7 +11,8 @@
     "title": "Authentic French Flavors in the Heart of Geneva",
     "subtitle": "Experience the warmth of traditional French cuisine in our cozy restaurant located in the charming Grottes district.",
     "viewMenu": "View Our Menu",
-    "makeReservation": "Make a Reservation"
+    "makeReservation": "Make a Reservation",
+    "welcome": "Welcome to Le Nant des Grottes"
   },
   "features": {
     "dailySpecials": "Daily Specials",
@@ -19,7 +20,10 @@
     "cozySetting": "Cozy Setting", 
     "cozySettingDesc": "Intimate dining atmosphere perfect for romantic dinners, family meals, or gathering with friends.",
     "freshIngredients": "Fresh Ingredients",
-    "freshIngredientsDesc": "We source the finest local and seasonal ingredients to create authentic French dishes with exceptional flavor."
+    "freshIngredientsDesc": "We source the finest local and seasonal ingredients to create authentic French dishes with exceptional flavor.",
+    "whyChoose": "Why Choose Le Nant des Grottes?",
+    "wineSelection": "Curated Wine Selection",
+    "wineSelectionDesc": "Carefully selected wines to complement our dishes, featuring both local Swiss and classic French varieties."
   },
   "about": {
     "title": "Our Story",
@@ -82,6 +86,17 @@
     "address": "Address",
     "telephone": "Telephone",
     "followUs": "Follow Us"
+  },
+  "visit": {
+    "title": "Visit Us",
+    "address": "Address",
+    "reservations": "Reservations",
+    "openingHours": "Opening Hours",
+    "hours": {
+      "tuesdaySaturday": "Tuesday - Saturday: 11:30 - 14:30, 18:30 - 23:00",
+      "sunday": "Sunday: 11:30 - 15:00",
+      "monday": "Monday: Closed"
+    }
   },
   "reservation": {
     "readyToDine": "Ready to Dine?",

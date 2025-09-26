@@ -11,7 +11,8 @@
     "title": "Saveurs Françaises Authentiques au Cœur de Genève",
     "subtitle": "Découvrez la chaleur de la cuisine française traditionnelle dans notre restaurant cosy situé dans le charmant quartier des Grottes.",
     "viewMenu": "Voir Notre Menu",
-    "makeReservation": "Faire une Réservation"
+    "makeReservation": "Faire une Réservation",
+    "welcome": "Bienvenue au Nant des Grottes"
   },
   "features": {
     "dailySpecials": "Plats du Jour",
@@ -19,7 +20,10 @@
     "cozySetting": "Cadre Chaleureux",
     "cozySettingDesc": "Ambiance intimiste parfaite pour les dîners romantiques, repas de famille ou retrouvailles entre amis.",
     "freshIngredients": "Ingrédients Frais",
-    "freshIngredientsDesc": "Nous sélectionnons les meilleurs ingrédients locaux et de saison pour créer des plats français authentiques aux saveurs exceptionnelles."
+    "freshIngredientsDesc": "Nous sélectionnons les meilleurs ingrédients locaux et de saison pour créer des plats français authentiques aux saveurs exceptionnelles.",
+    "whyChoose": "Pourquoi Choisir Le Nant des Grottes ?",
+    "wineSelection": "Sélection de Vins Curatée",
+    "wineSelectionDesc": "Vins soigneusement sélectionnés pour accompagner nos plats, avec des variétés suisses locales et françaises classiques."
   },
   "about": {
     "title": "Notre Histoire",
@@ -82,6 +86,17 @@
     "address": "Adresse",
     "telephone": "Téléphone", 
     "followUs": "Suivez-Nous"
+  },
+  "visit": {
+    "title": "Venez Nous Voir",
+    "address": "Adresse",
+    "reservations": "Réservations",
+    "openingHours": "Horaires d'Ouverture",
+    "hours": {
+      "tuesdaySaturday": "Mardi - Samedi : 11h30 - 14h30, 18h30 - 23h00",
+      "sunday": "Dimanche : 11h30 - 15h00",
+      "monday": "Lundi : Fermé"
+    }
   },
   "reservation": {
     "readyToDine": "Prêt à Déguster ?",
