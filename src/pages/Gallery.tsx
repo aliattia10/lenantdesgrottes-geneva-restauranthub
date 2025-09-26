@@ -14,18 +14,18 @@ import restaurantDiningGroup from '@/assets/restaurant-dining-group.jpg';
 const Gallery = () => {
   const { t } = useTranslation();
   const cuisineImages = [
-    { src: realSaladGoatcheese, alt: 'Fresh goat cheese salad with mixed greens and restaurant ambiance' },
-    { src: realSaladInterior, alt: 'Colorful salad with restaurant interior in background' },
-    { src: realKitchenDishes, alt: 'Beautifully plated dishes including beef stew with vegetables' },
+    { src: realSaladGoatcheese, alt: t('gallery.images.goatCheeseSalad') },
+    { src: realSaladInterior, alt: t('gallery.images.colorfulSalad') },
+    { src: realKitchenDishes, alt: t('gallery.images.kitchenDishes') },
   ];
 
   const ambianceImages = [
-    { src: restaurantDiningGroup, alt: 'Happy guests dining together with wine list visible in background' },
-    { src: realBarDay, alt: 'Bar area during daytime with hanging wine glasses' },
-    { src: realBarNight, alt: 'Cozy evening bar atmosphere with warm lighting' },
-    { src: realRestaurantNight, alt: 'Restaurant dining area at night with intimate lighting' },
-    { src: realWineStorage, alt: 'Wine storage area with atmospheric lighting' },
-    { src: realExterior, alt: 'Restaurant exterior with signature turquoise door frames' },
+    { src: restaurantDiningGroup, alt: t('gallery.images.diningGroup') },
+    { src: realBarDay, alt: t('gallery.images.barDay') },
+    { src: realBarNight, alt: t('gallery.images.barNight') },
+    { src: realRestaurantNight, alt: t('gallery.images.restaurantNight') },
+    { src: realWineStorage, alt: t('gallery.images.wineStorage') },
+    { src: realExterior, alt: t('gallery.images.exterior') },
   ];
 
   return (
@@ -40,8 +40,7 @@ const Gallery = () => {
             </h1>
             <div className="w-24 h-1 bg-gradient-accent mx-auto mb-8"></div>
             <p className="font-inter text-lg text-foreground/80 max-w-2xl mx-auto">
-              Discover the ambiance and culinary artistry that makes Le Nant des Grottes 
-              a special place in Geneva's Grottes district.
+              {t('gallery.description')}
             </p>
           </div>
 

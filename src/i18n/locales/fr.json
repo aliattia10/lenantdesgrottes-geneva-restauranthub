@@ -54,7 +54,19 @@
   "gallery": {
     "title": "Galerie",
     "cuisine": "Notre Cuisine",
-    "ambiance": "Notre Ambiance"
+    "ambiance": "Notre Ambiance",
+    "description": "Découvrez l'ambiance et l'art culinaire qui font du Nant des Grottes un lieu spécial dans le quartier des Grottes à Genève.",
+    "images": {
+      "goatCheeseSalad": "Salade de chèvre frais avec mesclun et ambiance du restaurant",
+      "colorfulSalad": "Salade colorée avec intérieur du restaurant en arrière-plan",
+      "kitchenDishes": "Plats magnifiquement dressés incluant daube de bœuf aux légumes",
+      "diningGroup": "Convives heureux dînant ensemble avec carte des vins visible en arrière-plan",
+      "barDay": "Zone bar pendant la journée avec verres à vin suspendus",
+      "barNight": "Atmosphère chaleureuse du bar en soirée avec éclairage tamisé",
+      "restaurantNight": "Salle à manger du restaurant la nuit avec éclairage intimiste",
+      "wineStorage": "Cave à vin avec éclairage d'ambiance",
+      "exterior": "Extérieur du restaurant avec ses emblématiques cadres de porte turquoise"
+    }
   },
   "contact": {
     "title": "Venez Nous Voir ou Contactez-Nous",

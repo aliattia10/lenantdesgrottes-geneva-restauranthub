@@ -54,7 +54,19 @@
   "gallery": {
     "title": "Gallery",
     "cuisine": "Our Cuisine",
-    "ambiance": "Our Ambiance"
+    "ambiance": "Our Ambiance",
+    "description": "Discover the ambiance and culinary artistry that makes Le Nant des Grottes a special place in Geneva's Grottes district.",
+    "images": {
+      "goatCheeseSalad": "Fresh goat cheese salad with mixed greens and restaurant ambiance",
+      "colorfulSalad": "Colorful salad with restaurant interior in background",
+      "kitchenDishes": "Beautifully plated dishes including beef stew with vegetables",
+      "diningGroup": "Happy guests dining together with wine list visible in background",
+      "barDay": "Bar area during daytime with hanging wine glasses",
+      "barNight": "Cozy evening bar atmosphere with warm lighting",
+      "restaurantNight": "Restaurant dining area at night with intimate lighting",
+      "wineStorage": "Wine storage area with atmospheric lighting",
+      "exterior": "Restaurant exterior with signature turquoise door frames"
+    }
   },
   "contact": {
     "title": "Visit Us or Get in Touch",
