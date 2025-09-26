@@ -11,17 +11,17 @@ const Menu = () => {
     {
       name: "Cuisse de poulet & gratin dauphinois",
       description: "Aubergines confites, sauce champignons",
-      price: "CHF 28"
+      price: "CHF 26"
     },
     {
       name: "Daurade à la plancha",
       description: "Pommes grenailles, légumes du jour, sauce chimichurri",
-      price: "CHF 32"
+      price: "CHF 29"
     },
     {
       name: "Steak de Boeuf",
       description: "Frites, légumes du jour, sauce tartare",
-      price: "CHF 35"
+      price: "CHF 32"
     }
   ];
 

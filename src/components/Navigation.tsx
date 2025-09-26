@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
+import logo from '@/assets/logo.png';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import {
@@ -35,9 +36,13 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <Link 
             to="/" 
-            className="font-playfair text-2xl font-semibold text-primary hover:text-primary/80 transition-colors"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            Le Nant des Grottes
+            <img 
+              src={logo} 
+              alt="Le Nant des Grottes Restaurant and Bar" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

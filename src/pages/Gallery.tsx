@@ -9,6 +9,7 @@ import realBarNight from '@/assets/real-bar-night.jpg';
 import realRestaurantNight from '@/assets/real-restaurant-night.jpg';
 import realWineStorage from '@/assets/real-wine-storage.jpg';
 import realExterior from '@/assets/real-exterior.jpg';
+import restaurantDiningGroup from '@/assets/restaurant-dining-group.jpg';
 
 const Gallery = () => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ const Gallery = () => {
   ];
 
   const ambianceImages = [
+    { src: restaurantDiningGroup, alt: 'Happy guests dining together with wine list visible in background' },
     { src: realBarDay, alt: 'Bar area during daytime with hanging wine glasses' },
     { src: realBarNight, alt: 'Cozy evening bar atmosphere with warm lighting' },
     { src: realRestaurantNight, alt: 'Restaurant dining area at night with intimate lighting' },
